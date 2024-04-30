@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Input types in forms</title>
+</head>
+<body>
+    <form >
+Name:<input type="text" ><br>
+Age: <input type="number" ><br>
+Email: <input type="email" ><br>
+Password: <input type="password" ><br>
+Contact: <input type="tel" pattern="[6-9][0-9]{9}" required><br>
+<!-- pattern attribute of input tag is used to validate the value. In this case, phone number is validated which should have 10 digits alongwith starting with 6/7/8/9 only -->
+
+Gender:<br>
+<input type="radio" name="gen">Male <br>
+<input type="radio" name="gen">Female <br>
+<!-- name attribute should have same value in both the radio buttons in order to make any one of them selected -->
+
+<!-- Implementing checkboxes -->
+<b>Select more than one value</b> <br>
+    <input type="checkbox">A <br>
+    <input type="checkbox">B <br>
+    <input type="checkbox">C <br>
+    <input type="checkbox">D <br>
+
+
+    <!-- Implementing dropdown lists -->
+    <select >
+        <option value="" selected disabled>Choose any one course</option>
+        <option value="" >B.Tech</option>
+        <option value="">M.Tech</option>
+        <option value="">BCA</option>
+        <option value="">MCA</option>
+    </select>
+    <!-- 
+        disabled attribute of input tag ensures that particular option in dropdown list can't be selected.
+        selected attribute makes one of the option selected in drop-down list by default
+    
+    
+    -->
+
+<br>
+
+Date(start from 01/01/2000):<input type="date" min="2000-01-01"> <br>
+Date(ends at 30/04/2024):<input type="date" max="2024-04-30">
+<br><br>
+Date-Time <input type="datetime-local">
+<br>
+
+Date(start from 01/01/2000 and end at 16/04/2024)
+<input type="date" min="2000-01-01" max="2024-04-16">
+
+<!-- Time -->
+<br>
+<br>
+Time: (start time- 9Am upto- 5PM)
+<input type="time" min="09:00" max="17:00">
+<br> <br> <br>
+Date+Time filter acc to given constraint
+<input type="datetime-local" min="2024-04-16T09:00" max="2024-04-16T11:00">
+
+<br> <br> <br>
+<!-- datalist -->
+<label for="brw">Choose your browser</label>
+<input list="browser" name="brw">
+<datalist id="browser">
+    <option value="safari"></option>
+    <option value="firefox"></option>
+    <option value="opera"></option>
+    <option value="chrome"></option>
+</datalist>
+<br> <br> <br>
+
+<!-- Uploading a file -->
+
+<input type="file">
+<br> <br> <br>
+<!-- textarea input--used to take input in multi lines -->
+<textarea  cols="30" rows="10"></textarea>
+
+
+
+
+<br> <br> <br>
+<!-- <input type="submit" > -->
+
+<!-- color input -->
+<input type="color">
+<br> <br> <br>
+
+<!-- hidden input -->
+hidden field:<input type="hidden">
+<br> <br> <br>
+
+Week:<input type="week">
+<br> <br> <br>
+Month:<input type="month">
+<br> <br> <br>
+
+
+
+
+
+
+
+
+<!-- Adding image in submit button -->
+<input type="image" src="logo.png" height="32px" width="32px">
+
+
+
+
+    </form>
+
+</body>
+</html>
